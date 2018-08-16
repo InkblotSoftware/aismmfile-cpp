@@ -54,7 +54,7 @@ int main (int argc, char **argv) {
 
         fprintf (stderr, "Count messages: %zu\n", track.size());
         
-    } catch (std::exception e) {
+    } catch (std::exception &e) {
         fprintf (stderr, "-- Program died with exception: %s\n", e.what());
         dieWithUsage ();
     }

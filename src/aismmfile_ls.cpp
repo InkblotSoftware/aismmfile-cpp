@@ -42,7 +42,7 @@ int main (int argc, char **argv) {
         fprintf (stderr, "Count MMSIs:    %zu\n", mmf.mmsis().size());
         fprintf (stderr, "Count messages: %zu\n", mmf.all().size());
 
-    } catch (std::exception e) {
+    } catch (std::exception &e) {
         fprintf (stderr, "Died with exception: %s\n", e.what());
         dieWithUsage ();
     }
