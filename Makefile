@@ -36,7 +36,7 @@ bin/run_tests: src/run_tests.cpp include/aismmfile.hpp
 ### Install prefix; override at 'make' invocation if desired
 PREFIX := /usr/local
 
-install: bin/aismmfile_ls
+install: bin/aismmfile_ls bin/aismmfile_mmsi
 	cp include/aismmfile.hpp $(DESTDIR)$(PREFIX)/include/
 	cp bin/aismmfile_ls $(DESTDIR)$(PREFIX)/bin
 	cp bin/aismmfile_mmsi $(DESTDIR)$(PREFIX)/bin
